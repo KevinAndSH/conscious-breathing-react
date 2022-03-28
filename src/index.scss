@@ -1,0 +1,42 @@
+@function color($lightness, $opacity: 1) {
+  @return hsla(var(--hue), var(--sat), $lightness * 1%, $opacity)
+};
+
+@import "./scss/header";
+@import "./scss/main";
+@import "./scss/btn";
+@import "./scss/modal";
+
+:root {
+  --hue: 200;
+  --sat: 20%;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: color(90);
+
+  #root {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+a {
+  text-decoration: none;
+}

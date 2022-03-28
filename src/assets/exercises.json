@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Respiración para controlar el estrés y dormir bien",
+    "description": [
+      "El doctor Andrew Weil aconseja repetir este ejercicio dos veces al día.",
+      "- Coloca la punta de la lengua en el paladar, detrás de los dientes incisivos superiores.",
+      "- Inhala por la nariz durante 4 segundos, aguanta la respiración 7 segundos.",
+      "- Exhala por la boca frunciendo los labios y haciendo ruido (como si soplaras) durante 8 segundos.",
+      "- Haz cuatro respiraciones."
+    ],
+    "inhaleTime": 4,
+    "holdTime": 7,
+    "exhaleTime": 8,
+    "pauseTime": 1,
+    "prepareText": "Vacia tus pulmones y mantén la punta de la lengua en el paladar, detrás de los incisivos superiores",
+    "inhaleText": "Inhala",
+    "holdText": "Mantén la respiración",
+    "exhaleText": "Exhala por la boca frunciendo los labios y haciendo ruido",
+    "pauseText": "Exhala por la boca frunciendo los labios y haciendo ruido"
+  },
+  {
+    "id": 2,
+    "name": "Respiración para equilibrar la mente",
+    "description": [
+      "Aclara la mente antes de un examen.",
+      "- Tapa con el pulgar uno de los orificios de la nariz y respira lentamente por el otro contando hasta 8.",
+      "- Retén el aire 4 segundos, tapas la otra fosa nasal y exhalas hasta 8.",
+      "- Haz una pausa de 4 segundos.",
+      "- Practica durante algunos minutos.",
+      "- Cambia de fosa nasal tras cada exhalación."
+    ],
+    "inhaleTime": 8,
+    "holdTime": 4,
+    "exhaleTime": 8,
+    "pauseTime": 4,
+    "prepareText": "Vacía tus pulmones y tapa con el pulgar uno de los orificios de la nariz",
+    "inhaleText": "Inhala",
+    "holdText": "Mantén la respiración, y cambia de fosa nasal",
+    "exhaleText": "Exhala",
+    "pauseText": "Haz una pausa"
+  }
+]

@@ -1,0 +1,74 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: color(10, 0.7);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &--content {
+    position: absolute;
+    background-color: color(50);
+    padding: 3em;
+    width: 500px;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    .outer-circle {
+      display: block;
+      $side: #{'min(80vw, 350px)'};
+      width: $side;
+      height: $side;
+      border-radius: 50%;
+      background-color: color(90, 0.2);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .inner-circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: scale(.1);
+        background-color: color(90);
+      }
+    }
+
+    &::after {
+      content: var(--modal-text, "Hi");
+      color: color(90);
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+}
+
+
+@keyframes inhale {
+  from {
+    transform: scale(.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes exhale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(.1);
+  }
+}
