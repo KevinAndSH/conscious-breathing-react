@@ -1,7 +1,4 @@
-@function color($lightness, $opacity: 1) {
-  @return hsla(var(--hue), var(--sat), $lightness * 1%, $opacity)
-};
-
+@import "./scss/utils";
 @import "./scss/header";
 @import "./scss/main";
 @import "./scss/btn";

@@ -12,10 +12,7 @@ function App() {
         <Sidebar />
         <main>
           <Routes>
-            <Route
-              path="/exercise/:id"
-              element={ <Main /> }
-            />
+            <Route path="/exercise/:id/*" element={ <Main /> } />
           </Routes>
         </main>
       </div>

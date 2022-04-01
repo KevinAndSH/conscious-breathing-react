@@ -1,9 +1,12 @@
-import { Link, useParams } from "react-router-dom"
+import { useState } from "react"
+import { useParams } from "react-router-dom"
 import exercises from "../assets/exercises.json"
+import Modal from "./Modal"
 
 function Main() {
   const { id } = useParams()
   const exercise = exercises.find(ex => ex.id === parseInt(id))
+  const [isModalOpen, setModalOpen] = useState(false)
 
   return (
     <div className="content-wrapper">
@@ -12,14 +15,15 @@ function Main() {
       </h2>
 
       <div>
-        {
-          exercise.description.map(line => <p key={line}>{ line }</p>)
-        }
+        { exercise.description.map(line => <p key={line}>{ line }</p>) }
       </div>
-      <Link
+      
+      <button
         className="btn"
-        to={`/exercise/${id}/try-it-out`}
-      >Intentalo</Link>
+        onClick={ () => setModalOpen(true) }
+      >Intentalo</button>
+
+      <Modal open={isModalOpen} onClose={() => setModalOpen(false)} data={exercise} />
     </div>
   )
 }

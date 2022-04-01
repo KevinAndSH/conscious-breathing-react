@@ -9,7 +9,7 @@
   transition: .2s;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     outline: none;
     cursor: pointer;
     color: color(80);

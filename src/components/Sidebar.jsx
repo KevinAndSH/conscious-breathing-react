@@ -11,7 +11,6 @@ function Sidebar() {
               <Link
                 to={`/exercise/${exercise.id}`}
                 tabIndex={0}
-                onClick={e => e.target.blur()}
               >
                 { exercise.name }
               </Link>

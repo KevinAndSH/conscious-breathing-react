@@ -3,9 +3,9 @@ import ghLogo from "../assets/gh.png"
 function Header() {
   return (
     <header>
-      <div className="logo"></div>
+      <div className="logo" />
       <a
-        href="https://github.com/KevinAndSH/conscious-breathing"
+        href="https://github.com/KevinAndSH/conscious-breathing-react"
         target="_blank"
         rel="noreferrer noopener"
       >
